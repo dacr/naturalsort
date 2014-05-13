@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2012 David Crosson, Inc.
+ * Copyright 2011-2014 David Crosson, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ object NaturalSort {
   implicit val ord = new Ordering[String] {
     //def groupIt(str:String) = if (str.nonEmpty && str.head.isDigit) str.takeWhile(_.isDigit) else str.takeWhile(!_.isDigit)
     def groupIt(str:String) = if (str.nonEmpty && str.head.isDigit) str.takeWhile(_.isDigit) else str.substring(0,if (str.size>0) 1 else 0)
-    val dec="""(\d+)"""r
+    val dec="""(\d+)""".r
     def compare(str1: String, str2: String) = {
       (groupIt(str1), groupIt(str2)) match {
         case ("","") => 0

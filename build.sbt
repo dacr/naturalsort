@@ -1,6 +1,6 @@
 name := "naturalsort"
 
-version := "0.1.6"
+version := "0.1.7"
 
 organization :="fr.janalyse"
 
@@ -13,7 +13,7 @@ scalacOptions ++= Seq( "-deprecation", "-unchecked", "-feature")
 crossScalaVersions := Seq("2.10.5", "2.11.6")
 
 libraryDependencies ++= Seq(
-    "org.scalatest" %% "scalatest" % "2.2.1" % "test"
+    "org.scalatest" %% "scalatest" % "2.2.+" % "test"
 )
 
 publishTo := Some(

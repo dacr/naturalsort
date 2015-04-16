@@ -59,7 +59,12 @@ class NaturalSortTest extends FunSuite with ShouldMatchers {
     val t0 = new TreeSet[String]() ++ List("G1R3", "G0R1C1","G1R2C1")
     t0.toList should equal (List("G0R1C1","G1R2C1","G1R3"))
   }
-	
+
+  test("big number") {
+    val t0 = new TreeSet[String]() ++ List("specs2-3.2-20150329233502-0653950.jar", "specs2-3.2-20150328050811-d146044.jar")
+    t0.toList should equal (List("specs2-3.2-20150328050811-d146044.jar", "specs2-3.2-20150329233502-0653950.jar"))    
+  }
+  
 	
   ignore("special cases tests") {
     // floating number natural sorting is not yet supported, 1.001 mean 1.1, 00 are ignored...

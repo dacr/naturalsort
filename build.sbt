@@ -1,19 +1,19 @@
 name := "naturalsort"
 
-version := "0.1.5"
+version := "0.1.6"
 
 organization :="fr.janalyse"
 
 organizationHomepage := Some(new URL("http://www.janalyse.fr"))
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.10.5"
 
 scalacOptions ++= Seq( "-deprecation", "-unchecked", "-feature")
 
-crossScalaVersions := Seq("2.10.4", "2.11.0")
+crossScalaVersions := Seq("2.10.5", "2.11.6")
 
 libraryDependencies ++= Seq(
-    "org.scalatest" %% "scalatest" % "2.1.5" % "test"
+    "org.scalatest" %% "scalatest" % "2.1.+" % "test"
 )
 
 publishTo := Some(

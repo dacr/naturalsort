@@ -1,3 +1,10 @@
+# NaturalSort API
+
+Natural (human) sorting algorithm : ["a1", "a3", "a10", "a2", "a21"] will be sorted as ["a1", "a2", "a3", "a10", "a21"] and not ["a1", "a10", "a2", "a21", "a3"]. It merges alphabetical and numeric sorting.
+
+Usage examples coming from test cases :
+
+```
   import fr.janalyse.tools.NaturalSort._
   
   test("monkey tests") {
@@ -28,3 +35,5 @@
     val t4 = new TreeSet[String]() ++ List("x2-g8",  "x2-y7" , "x2-y08" , "x8-y8")
     t4.toList should equal (List("x2-g8", "x2-y7", "x2-y08", "x8-y8"))
   }
+```
+

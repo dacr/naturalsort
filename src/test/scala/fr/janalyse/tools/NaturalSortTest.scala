@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2012 David Crosson, Inc.
+ * Copyright 2011-2014 David Crosson, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 package fr.janalyse.tools
 
 import org.scalatest.FunSuite
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.ShouldMatchers
 import scala.collection.immutable.TreeSet
 
 
@@ -59,7 +59,12 @@ class NaturalSortTest extends FunSuite with ShouldMatchers {
     val t0 = new TreeSet[String]() ++ List("G1R3", "G0R1C1","G1R2C1")
     t0.toList should equal (List("G0R1C1","G1R2C1","G1R3"))
   }
-	
+
+  test("big number") {
+    val t0 = new TreeSet[String]() ++ List("specs2-3.2-20150329233502-0653950.jar", "specs2-3.2-20150328050811-d146044.jar")
+    t0.toList should equal (List("specs2-3.2-20150328050811-d146044.jar", "specs2-3.2-20150329233502-0653950.jar"))    
+  }
+  
 	
   ignore("special cases tests") {
     // floating number natural sorting is not yet supported, 1.001 mean 1.1, 00 are ignored...

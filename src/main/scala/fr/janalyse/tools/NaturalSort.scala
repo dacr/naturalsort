@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2012 David Crosson, Inc.
+ * Copyright 2011-2014 David Crosson, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,12 +21,12 @@ object NaturalSort {
   implicit val ord = new Ordering[String] {
     //def groupIt(str:String) = if (str.nonEmpty && str.head.isDigit) str.takeWhile(_.isDigit) else str.takeWhile(!_.isDigit)
     def groupIt(str:String) = if (str.nonEmpty && str.head.isDigit) str.takeWhile(_.isDigit) else str.substring(0,if (str.size>0) 1 else 0)
-    val dec="""(\d+)"""r
+    val dec="""(\d+)""".r
     def compare(str1: String, str2: String) = {
       (groupIt(str1), groupIt(str2)) match {
         case ("","") => 0
-        case (dec(x),dec(y)) if (x.toInt==y.toInt) =>  compare(str1.substring(x.size), str2.substring(y.size))
-        case (dec(x),dec(y)) => (x.toInt - y.toInt)
+        case (dec(x),dec(y)) if (x.toLong==y.toLong) =>  compare(str1.substring(x.size), str2.substring(y.size))
+        case (dec(x),dec(y)) => (x.toLong - y.toLong) match { case 0L => 0 case x if x<0 => -1 case _ => 1}
         case (x,y) if (x == y) => compare(str1.substring(x.size), str2.substring(y.size))
         case (x,y) => x compareTo y
       }

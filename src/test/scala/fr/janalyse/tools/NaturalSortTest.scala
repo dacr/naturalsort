@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2014 David Crosson, Inc.
+ * Copyright 2011-2017 David Crosson, Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,11 +17,11 @@
 package fr.janalyse.tools
 
 import org.scalatest.FunSuite
-import org.scalatest.ShouldMatchers
+import org.scalatest.Matchers._
 import scala.collection.immutable.TreeSet
 
 
-class NaturalSortTest extends FunSuite with ShouldMatchers {
+class NaturalSortTest extends FunSuite {
   
   import fr.janalyse.tools.NaturalSort._
   

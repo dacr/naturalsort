@@ -56,8 +56,8 @@ Examples coming from the test cases :
 [licenseImg2]: https://img.shields.io/:license-apache2-blue.svg
 [licenseLink]: LICENSE
 
-[codacyImg]: https://img.shields.io/codacy/3f668cc5639b4f04bd85e5c068350aea.svg
-[codacyImg2]: https://api.codacy.com/project/badge/grade/3f668cc5639b4f04bd85e5c068350aea
+[codacyImg]: https://img.shields.io/codacy/ef7641c8afd246359a1dca5039bf283b.svg
+[codacyImg2]: https://api.codacy.com/project/badge/grade/ef7641c8afd246359a1dca5039bf283b
 [codacyLink]: https://www.codacy.com/app/dacr/naturalsort/dashboard
 
 [codecovImg]: https://img.shields.io/codecov/c/github/dacr/naturalsort/master.svg

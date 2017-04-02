@@ -1,8 +1,16 @@
-# NaturalSort API
+# NaturalSort [![Build Status][travisImg]][travisLink] [![License][licenseImg]][licenseLink] [![Codacy][codacyImg]][codacyLink] [![codecov][codecovImg]][codecovLink]
 
 Natural (human) sorting algorithm : ["a1", "a3", "a10", "a2", "a21"] will be sorted as ["a1", "a2", "a3", "a10", "a21"] and not ["a1", "a10", "a2", "a21", "a3"]. It merges alphabetical and numeric sorting.
 
-Usage examples coming from test cases :
+In your build.sbt, add this :
+
+`libraryDependencies += "fr.janalyse" %% "naturalsort" % version`
+
+Latest `version`: [![Maven][mavenImg]][mavenLink] [![Scaladex][scaladexImg]][scaladexLink]
+
+## Usage
+
+Examples coming from the test cases :
 
 ```
   import fr.janalyse.tools.NaturalSort._
@@ -37,3 +45,25 @@ Usage examples coming from test cases :
   }
 ```
 
+[mavenImg]: https://img.shields.io/maven-central/v/fr.janalyse/naturalsort_2.12.svg
+[mavenImg2]: https://maven-badges.herokuapp.com/maven-central/fr.janalyse/naturalsort_2.12/badge.svg
+[mavenLink]: https://search.maven.org/#search%7Cga%7C1%7Cfr.janalyse.naturalsort
+
+[scaladexImg]: https://index.scala-lang.org/dacr/naturalsort/naturalsort/latest.svg
+[scaladexLink]: https://index.scala-lang.org/dacr/naturalsort
+
+[licenseImg]: https://img.shields.io/github/license/dacr/naturalsort.svg
+[licenseImg2]: https://img.shields.io/:license-apache2-blue.svg
+[licenseLink]: LICENSE
+
+[codacyImg]: https://img.shields.io/codacy/3f668cc5639b4f04bd85e5c068350aea.svg
+[codacyImg2]: https://api.codacy.com/project/badge/grade/3f668cc5639b4f04bd85e5c068350aea
+[codacyLink]: https://www.codacy.com/app/dacr/naturalsort/dashboard
+
+[codecovImg]: https://img.shields.io/codecov/c/github/dacr/naturalsort/master.svg
+[codecovImg2]: https://codecov.io/github/dacr/naturalsort/coverage.svg?branch=master
+[codecovLink]: http://codecov.io/github/dacr/naturalsort?branch=master
+
+[travisImg]: https://img.shields.io/travis/dacr/naturalsort.svg
+[travisImg2]: https://travis-ci.org/dacr/naturalsort.png?branch=master
+[travisLink]:https://travis-ci.org/dacr/naturalsort

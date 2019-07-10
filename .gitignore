@@ -8,4 +8,6 @@ target/
 .project
 .cache
 .settings
+.idea
+*.iml
 .DS_Store

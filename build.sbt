@@ -19,9 +19,9 @@ libraryDependencies ++= Seq(
 )
 
 testOptions in Test += {
-    val dest = scalaVersion.value.split("[.]").take(2).mkString(".")
+    val rel = scalaVersion.value.split("[.]").take(2).mkString(".")
     Tests.Argument(
         "-oDF", // -oW to remove colors
-        "-u", s"target/$dest/junitresults"
+        "-u", s"target/junitresults/scala-$rel/"
     )
 }

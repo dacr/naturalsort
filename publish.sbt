@@ -1,8 +1,5 @@
 pomIncludeRepository := { _ => false }
 
-useGpg := true
-
-
 releaseCrossBuild := true
 releasePublishArtifactsAction := PgpKeys.publishSigned.value
 publishMavenStyle := true

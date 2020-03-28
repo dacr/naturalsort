@@ -1,12 +1,9 @@
-# NaturalSort [![Build Status][travisImg]][travisLink] [![License][licenseImg]][licenseLink] [![Codacy][codacyImg]][codacyLink] [![codecov][codecovImg]][codecovLink]
+# NaturalSort [![Build Status][travisImg]][travisLink] [![License][licenseImg]][licenseLink] [![Maven][mavenImg]][mavenLink] [![Scaladex][scaladexImg]][scaladexLink]
 
 Natural (human) sorting algorithm : ["a1", "a3", "a10", "a2", "a21"] will be sorted as ["a1", "a2", "a3", "a10", "a21"] and not ["a1", "a10", "a2", "a21", "a3"]. It merges alphabetical and numeric sorting.
 
-In your build.sbt, add this :
+In your build.sbt, add this : `libraryDependencies += "fr.janalyse" %% "naturalsort" % version`
 
-`libraryDependencies += "fr.janalyse" %% "naturalsort" % version`
-
-Latest `version`: [![Maven][mavenImg]][mavenLink] [![Scaladex][scaladexImg]][scaladexLink]
 
 ## Usage
 
@@ -45,6 +42,10 @@ Examples coming from the test cases :
   }
 ```
 
+[travisImg]: https://img.shields.io/travis/dacr/naturalsort.svg
+[travisImg2]: https://travis-ci.org/dacr/naturalsort.png?branch=master
+[travisLink]:https://travis-ci.org/dacr/naturalsort
+
 [mavenImg]: https://img.shields.io/maven-central/v/fr.janalyse/naturalsort_2.12.svg
 [mavenImg2]: https://maven-badges.herokuapp.com/maven-central/fr.janalyse/naturalsort_2.12/badge.svg
 [mavenLink]: https://search.maven.org/#search%7Cga%7C1%7Cfr.janalyse.naturalsort
@@ -63,7 +64,3 @@ Examples coming from the test cases :
 [codecovImg]: https://img.shields.io/codecov/c/github/dacr/naturalsort/master.svg
 [codecovImg2]: https://codecov.io/github/dacr/naturalsort/coverage.svg?branch=master
 [codecovLink]: http://codecov.io/github/dacr/naturalsort?branch=master
-
-[travisImg]: https://img.shields.io/travis/dacr/naturalsort.svg
-[travisImg2]: https://travis-ci.org/dacr/naturalsort.png?branch=master
-[travisLink]:https://travis-ci.org/dacr/naturalsort

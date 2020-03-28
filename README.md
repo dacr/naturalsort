@@ -46,8 +46,8 @@ Examples coming from the test cases :
 [travisImg2]: https://travis-ci.org/dacr/naturalsort.png?branch=master
 [travisLink]:https://travis-ci.org/dacr/naturalsort
 
-[mavenImg]: https://img.shields.io/maven-central/v/fr.janalyse/naturalsort_2.12.svg
-[mavenImg2]: https://maven-badges.herokuapp.com/maven-central/fr.janalyse/naturalsort_2.12/badge.svg
+[mavenImg]: https://img.shields.io/maven-central/v/fr.janalyse/naturalsort_2.13.svg
+[mavenImg2]: https://maven-badges.herokuapp.com/maven-central/fr.janalyse/naturalsort_2.13/badge.svg
 [mavenLink]: https://search.maven.org/#search%7Cga%7C1%7Cfr.janalyse.naturalsort
 
 [scaladexImg]: https://index.scala-lang.org/dacr/naturalsort/naturalsort/latest.svg

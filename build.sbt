@@ -1,8 +1,9 @@
-name                   := "naturalsort"
-organization           := "fr.janalyse"
-homepage               := Some(new URL("https://github.com/dacr/naturalsort"))
-scmInfo                := Some(ScmInfo(url(s"https://github.com/dacr/naturalsort"), s"git@github.com:dacr/naturalsort.git"))
-licenses += "Apache 2" -> url(s"https://www.apache.org/licenses/LICENSE-2.0.txt")
+name         := "naturalsort"
+organization := "fr.janalyse"
+homepage     := Some(new URL("https://github.com/dacr/naturalsort"))
+scmInfo      := Some(ScmInfo(url(s"https://github.com/dacr/naturalsort"), s"git@github.com:dacr/naturalsort.git"))
+
+licenses += "NON-AI-APACHE2" -> url(s"https://github.com/non-ai-licenses/non-ai-licenses/blob/main/NON-AI-APACHE2")
 
 ThisBuild / scalaVersion       := "3.3.0"
 ThisBuild / scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")

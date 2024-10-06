@@ -1,20 +1,15 @@
 name         := "naturalsort"
 organization := "fr.janalyse"
-homepage     := Some(new URL("https://github.com/dacr/naturalsort"))
-scmInfo      := Some(ScmInfo(url(s"https://github.com/dacr/naturalsort"), s"git@github.com:dacr/naturalsort.git"))
 
 licenses += "NON-AI-APACHE2" -> url(s"https://github.com/non-ai-licenses/non-ai-licenses/blob/main/NON-AI-APACHE2")
 
-ThisBuild / scalaVersion       := "3.3.0"
-ThisBuild / scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
-ThisBuild / crossScalaVersions := Seq("2.10.7", "2.11.12", "2.12.18", "2.13.11", "3.3.0")
-// 2.10.x : generates java 6 bytecodes
-// 2.11.x : generates java 6 bytecodes
-// 2.12.x : generates java 8 bytecodes && JVM8 required for compilation
-// 2.13.x : generates java 8 bytecodes && JVM8 required for compilation
+scalaVersion       := "3.5.1"
+crossScalaVersions := Seq("2.13.15", "3.5.1")
+
+scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
 
 libraryDependencies ++= Seq(
-  ("org.scalatest" %% "scalatest" % "3.2.16" % Test)
+  "org.scalatest" %% "scalatest" % "3.2.19" % Test
 )
 
 Test / testOptions += {
@@ -25,3 +20,14 @@ Test / testOptions += {
     s"target/junitresults/scala-$rel/"
   )
 }
+
+homepage   := Some(new URL("https://github.com/dacr/naturalsort"))
+scmInfo    := Some(ScmInfo(url(s"https://github.com/dacr/naturalsort"), s"git@github.com:dacr/naturalsort.git"))
+developers := List(
+  Developer(
+    id = "dacr",
+    name = "David Crosson",
+    email = "crosson.david@gmail.com",
+    url = url("https://github.com/dacr")
+  )
+)

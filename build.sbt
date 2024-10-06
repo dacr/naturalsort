@@ -1,5 +1,6 @@
 name         := "naturalsort"
 organization := "fr.janalyse"
+description  := "Human compatible natural sort"
 
 licenses += "NON-AI-APACHE2" -> url(s"https://github.com/non-ai-licenses/non-ai-licenses/blob/main/NON-AI-APACHE2")
 

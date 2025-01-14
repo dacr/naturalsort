@@ -4,7 +4,7 @@ description  := "Human compatible natural sort"
 
 licenses += "NON-AI-APACHE2" -> url(s"https://github.com/non-ai-licenses/non-ai-licenses/blob/main/NON-AI-APACHE2")
 
-scalaVersion       := "3.5.1"
+scalaVersion       := "3.3.4"
 crossScalaVersions := Seq("2.13.15", "3.5.1")
 
 scalacOptions ++= Seq("-deprecation", "-unchecked", "-feature")
